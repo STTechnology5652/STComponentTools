@@ -217,34 +217,9 @@ static STRouterExecute *imp;
         if (err) *err = errBack;
         return nil;
     }
-   
-    /*
-    paramaters = para;
-    NSURLComponents *componentSource = [NSURLComponents componentsWithString:parser.urlPartternFull];
-    
-    //重组URL, 将paramaters参数变为 query
-    NSMutableArray<NSURLQueryItem *> *queryArr = [NSMutableArray new];
-    [queryArr addObjectsFromArray:componentSource.queryItems];
-    [paramaters enumerateKeysAndObjectsUsingBlock:^(id _Nonnull key, id _Nonnull obj, BOOL *_Nonnull stop) {
-        NSString *value = [[NSString stringWithFormat:@"%@", obj] stringByRemovingPercentEncoding];
-        NSURLQueryItem *item = [[NSURLQueryItem alloc] initWithName:key value:value];
-        [queryArr addObject:item];
-    }];
-    queryArr.count ? componentSource.queryItems = queryArr : 0;
-    NSString *urlBack = componentSource.URL.absoluteString;
-    
-//    STRouterUrlParser *parserUsed = [STRouterUrlParser stParserUrl:urlBack parameter:paramaters];
-    NSString *urlPartternBack = parser.urlParttern;
-   */
     
     if (requestBack) {
         STRouterUrlRequest *request_used = [request copy];
-        /*
-        request_used.url = urlBack;
-        request_used.urlParttern = urlPartternBack;
-        request_used.parameter = paramaters;
-        request_used.paraOrignal = request.parameter;
-        */
         *requestBack = request_used;
     }
     
