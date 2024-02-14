@@ -5,7 +5,7 @@
 //  Created by stephen.chen on 2021/12/9.
 //
 
-#import <STComponentTools/STAnnotationHeader.h>
+#import <STAnnotation/STAnnotationHeader.h>
 
 #import "STModuleServiceDefines.h"
 NS_ASSUME_NONNULL_BEGIN

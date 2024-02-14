@@ -49,17 +49,6 @@ Pod::Spec.new do |spec|
   # 其他依赖pod
   # spec.dependency "XXXXXXXX"
 
-  # STAnnotation
-  spec.subspec 'STAnnotation' do |ss|
-      ss.source_files = 'STComponentTools/STAnnotation/**/*.{h,m,mm,c,cpp,swift}'
-      ss.public_header_files = 'STComponentTools/STAnnotation/Public/**/*.h' #此处放置组件的对外暴漏的头文件
-#       ss.pod_target_xcconfig = {
-#         'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) YKHawkeyeWithLoad'
-#       }
-#       ss.dependency 'YKHawkeye/Core'
-#       ss.vendored_frameworks = 'YKHawkeye/Framework/*.framework'
-    end
-
   # STRouter
   spec.subspec 'STRouter' do |ss|
       ss.source_files = 'STComponentTools/STRouter/**/*.{h,m,mm,c,cpp,swift}'
@@ -67,7 +56,7 @@ Pod::Spec.new do |spec|
 #       ss.pod_target_xcconfig = {
 #         'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) YKHawkeyeWithLoad'
 #       }
-      ss.dependency 'STComponentTools/STAnnotation'
+      ss.dependency 'STAnnotation'
       ss.dependency 'YYModel'
 
 #       ss.vendored_frameworks = 'YKHawkeye/Framework/*.framework'
@@ -80,7 +69,7 @@ Pod::Spec.new do |spec|
 #       ss.pod_target_xcconfig = {
 #         'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) YKHawkeyeWithLoad'
 #       }
-      ss.dependency 'STComponentTools/STAnnotation'
+      ss.dependency 'STAnnotation'
 #       ss.vendored_frameworks = 'YKHawkeye/Framework/*.framework'
     end
 

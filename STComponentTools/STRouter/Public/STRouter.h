@@ -10,7 +10,7 @@
 #import "STRouterDefines.h"
 #import "STRouterParameter.h"
 
-#import <STComponentTools/STAnnotation.h>
+#import <STAnnotation/STAnnotation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

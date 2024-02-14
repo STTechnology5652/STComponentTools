@@ -7,7 +7,7 @@
 
 #import <STComponentTools/STRouter.h>
 
-#import <STComponentTools/STAnnotation.h>
+#import <STAnnotation/STAnnotation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
