@@ -1,11 +1,11 @@
 PODS:
   - STAnnotation (0.0.1)
-  - STComponentTools (0.0.2):
-    - STComponentTools/STModuleService (= 0.0.2)
-    - STComponentTools/STRouter (= 0.0.2)
-  - STComponentTools/STModuleService (0.0.2):
+  - STComponentTools (0.0.3):
+    - STComponentTools/STModuleService (= 0.0.3)
+    - STComponentTools/STRouter (= 0.0.3)
+  - STComponentTools/STModuleService (0.0.3):
     - STAnnotation
-  - STComponentTools/STRouter (0.0.2):
+  - STComponentTools/STRouter (0.0.3):
     - STAnnotation
     - YYModel
   - YYModel (1.0.4)
@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   STAnnotation: ea0dcdbf740b57237d29384c521e4887d00031df
-  STComponentTools: 4e421c10923eee5e3f0e6c175398ba3435ff7f7f
+  STComponentTools: 0be0f3b71f369c89924bde6caa5eb7fb47b5b97c
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 871ee2dbfb1d79ec79931783a3c7c1967eaa4615

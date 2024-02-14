@@ -12,13 +12,12 @@
 NS_ASSUME_NONNULL_BEGIN
 @class UIViewController;
 @interface STRouterUrlRequest : NSObject<NSCopying>
-@property(nonatomic, copy) NSString * url; ///< url
+@property(nonatomic, copy) NSString * urlToOpen; ///< 调用路由时候，使用 urlToOpen
 @property (nonatomic,assign) BOOL absolute; ///< 绝对匹配URL
-@property(nonatomic, copy) NSString * urlParttern; ///< urlParttern
+@property(nonatomic, copy) NSString * urlParttern; ///< 注册路由时候，使用urlParttern
 @property(nonatomic, weak) UIViewController * fromVC; ///< 跳转的来源页面
 @property(nonatomic, assign) STRouterAnimationType animateTyepe; ///< 界面切换类型
-@property(nonatomic, copy) NSDictionary * parameter; ///< 序列化后的参数
-@property(nonatomic, copy) NSDictionary * paraOrignal; ///< 原始参数
+@property(nonatomic, copy) NSDictionary * parameter; ///< 路由参数
 
 + (instancetype)instanceWithBuilder:(void(^)(STRouterUrlRequest *builder))builderAction;
 @end

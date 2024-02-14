@@ -103,7 +103,7 @@ static STRouterExecute *imp;
 }
 
 - (void)stOpenUrl:(STRouterUrlRequest *)request complete:(STRouterUrlCompletion __nullable) complete {
-    [self yk_exportEventMessageWithId:STRouterEventId_openUrl message:request.url];
+    [self yk_exportEventMessageWithId:STRouterEventId_openUrl message:request.urlToOpen];
     NSError *err = nil;
     STRouterUrlRequest *requestUsing = nil;
     
@@ -134,7 +134,7 @@ static STRouterExecute *imp;
 
 - (void)stOpenUrlInstance:(NSString *)urlInstance fromVC:(UIViewController * __nullable)fromVC complete:(STRouterUrlCompletion __nullable) complete {
     STRouterUrlRequest *request = [STRouterUrlRequest instanceWithBuilder:^(STRouterUrlRequest * _Nonnull builder) {
-        builder.url = urlInstance;
+        builder.urlToOpen = urlInstance;
         builder.fromVC = fromVC;
     }];
     [self stOpenUrl:request complete:complete];
@@ -144,7 +144,7 @@ static STRouterExecute *imp;
     NSError *errBack = nil;
     
     STRouterUrlRequest *request = [STRouterUrlRequest instanceWithBuilder:^(STRouterUrlRequest * _Nonnull builder) {
-        builder.url = url; builder.parameter = paramaters;
+        builder.urlToOpen = url; builder.parameter = paramaters;
     }];
     
     [self yk_filterUrNodeWithRequest:request requestBack:nil error:&errBack];
@@ -173,11 +173,11 @@ static STRouterExecute *imp;
 - (STRouterMapperNode *)yk_filterUrNodeWithRequest:(STRouterUrlRequest*)request requestBack:(STRouterUrlRequest **)requestBack error:(NSError **)err {
     [self initRouterConfig];
     
-    NSString *url = request.url;
+    NSString *urlToOpen = request.urlToOpen;
     NSDictionary *paramaters = request.parameter;
     BOOL absolute = request.absolute;
     
-    STRouterUrlParser *parser = [STRouterUrlParser stParserUrl:request.url parameter:request.parameter];
+    STRouterUrlParser *parser = [STRouterUrlParser stParserUrl:request.urlToOpen parameter:request.parameter];
     NSMutableDictionary *para = [NSMutableDictionary new];
     [para addEntriesFromDictionary:[parser queryparamaters]];
     [request.parameter enumerateKeysAndObjectsUsingBlock:^(id _Nonnull key, id _Nonnull obj, BOOL *_Nonnull stop) {
@@ -205,7 +205,7 @@ static STRouterExecute *imp;
         NSString *urlUsed = nil;
         BOOL exchangeFlag = [self.globalInterceptor stRouterWhetheExchangeUrlParttern:parser.urlParttern parameter:para urlPartternBack:&urlUsed parameterBack:&paraUsed messageBack:&interceptorMes];
         if (exchangeFlag) { //URL 或者 参数 被交换了
-            url = urlUsed;
+            urlToOpen = urlUsed;
             para = [paraUsed mutableCopy];
         }
     }
