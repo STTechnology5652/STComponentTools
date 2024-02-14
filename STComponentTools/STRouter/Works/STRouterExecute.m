@@ -217,7 +217,8 @@ static STRouterExecute *imp;
         if (err) *err = errBack;
         return nil;
     }
-    
+   
+    /*
     paramaters = para;
     NSURLComponents *componentSource = [NSURLComponents componentsWithString:parser.urlPartternFull];
     
@@ -234,14 +235,16 @@ static STRouterExecute *imp;
     
 //    STRouterUrlParser *parserUsed = [STRouterUrlParser stParserUrl:urlBack parameter:paramaters];
     NSString *urlPartternBack = parser.urlParttern;
-    
+   */
     
     if (requestBack) {
         STRouterUrlRequest *request_used = [request copy];
+        /*
         request_used.url = urlBack;
         request_used.urlParttern = urlPartternBack;
         request_used.parameter = paramaters;
         request_used.paraOrignal = request.parameter;
+        */
         *requestBack = request_used;
     }
     
