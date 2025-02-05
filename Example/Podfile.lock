@@ -1,21 +1,17 @@
 PODS:
   - STAnnotation (0.0.1)
-  - STComponentTools (0.0.3):
-    - STComponentTools/STModuleService (= 0.0.3)
-    - STComponentTools/STRouter (= 0.0.3)
-  - STComponentTools/STModuleService (0.0.3):
+  - STComponentTools (0.0.4):
+    - STComponentTools/STModuleService (= 0.0.4)
+    - STComponentTools/STRouter (= 0.0.4)
+  - STComponentTools/STModuleService (0.0.4):
     - STAnnotation
-  - STComponentTools/STRouter (0.0.3):
+  - STComponentTools/STRouter (0.0.4):
     - STAnnotation
-    - YYModel
-  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - STComponentTools (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - YYModel
   https://github.com/STTechnology5652/STSpecs.git:
     - STAnnotation
 
@@ -25,8 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   STAnnotation: ea0dcdbf740b57237d29384c521e4887d00031df
-  STComponentTools: 0be0f3b71f369c89924bde6caa5eb7fb47b5b97c
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  STComponentTools: 8b336df5900834dea05856bd4bc0ed4355a554ad
 
 PODFILE CHECKSUM: 871ee2dbfb1d79ec79931783a3c7c1967eaa4615
 

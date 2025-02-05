@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DE877CC399CFD0645904DA7 /* NotificationServiceQ.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 493864C22F386D13C787A8C8 /* NotificationServiceQ.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0DE877CC399CFD0645904DA7 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 493864C22F386D13C787A8C8 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		10266D5E02D492B388E35737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE960E71E07CB44EB548FF5 /* Assets.xcassets */; };
 		13547B890003F26FC562079C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3AC2B6BB1ED0C04E8CB363 /* ViewController.xib */; };
 		1CBF34745A9852C2A4F2EF8C /* Pods_NotificationContent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9CA344A57B3DB3E0D97658 /* Pods_NotificationContent.framework */; };
@@ -32,7 +32,7 @@
 		BE52B6530338934487C4B5A5 /* CommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F10A2D777513C02342F33 /* CommonFile.swift */; };
 		C33FB7EC97BE18A082FDAE90 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A502D86A51568CE84C426E /* NotificationService.swift */; };
 		C4FFE507F31789A037F10B0A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2310A58B87B3F2E12F152C /* NotificationViewController.swift */; };
-		C8606862691802131D40A6A2 /* NotificationContentQ.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1EE5D40FE49A0659E103EADD /* NotificationContentQ.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C8606862691802131D40A6A2 /* NotificationContent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1EE5D40FE49A0659E103EADD /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CA66C79A8D463BE55C28E5F9 /* STComponentToolsEmptyOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEF53B5C6473F6FD04420AE /* STComponentToolsEmptyOC.m */; };
 		E9A0A9AE14DA34A03A3927B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF47A934103B5A59299E1C /* LaunchScreen.storyboard */; };
 		EDAB7E23761353EE54F857A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF47A934103B5A59299E1C /* LaunchScreen.storyboard */; };
@@ -82,8 +82,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C8606862691802131D40A6A2 /* NotificationContentQ.appex in Embed Foundation Extensions */,
-				0DE877CC399CFD0645904DA7 /* NotificationServiceQ.appex in Embed Foundation Extensions */,
+				C8606862691802131D40A6A2 /* NotificationContent.appex in Embed Foundation Extensions */,
+				0DE877CC399CFD0645904DA7 /* NotificationService.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,13 +104,13 @@
 
 /* Begin PBXFileReference section */
 		068ED8268A8B3B2E009155E4 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
-		0A9202EDCC13940397ED54F6 /* NotificationContent.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9202EDCC13940397ED54F6 /* NotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9435968115B2F5DBD7B959 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		140D5EC9811C791F7038852A /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		1805B177D04FC7E6B7221CD9 /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		192CD3A4C214836B841EEA35 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		1B914553D2A0E41255E02915 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
-		1EE5D40FE49A0659E103EADD /* NotificationContentQ.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.extensionkit-extension"; name = NotificationContentQ.appex; path = NotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE5D40FE49A0659E103EADD /* NotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F51BA1025CD135A421BF9FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2DA6B1699F8E5693DDE17141 /* Pods-STComponentTools_Example.debugq.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STComponentTools_Example.debugq.xcconfig"; path = "Target Support Files/Pods-STComponentTools_Example/Pods-STComponentTools_Example.debugq.xcconfig"; sourceTree = "<group>"; };
 		2FE960E71E07CB44EB548FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,11 +121,11 @@
 		442376CE816F3658D8FC7EE8 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		4428043D213F525DB1A88CC2 /* YKRPC-POD-NAME_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YKRPC-POD-NAME_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4859ADD8165389E23713E624 /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
-		493864C22F386D13C787A8C8 /* NotificationServiceQ.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.extensionkit-extension"; name = NotificationServiceQ.appex; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		493864C22F386D13C787A8C8 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAF29399940DA35686634CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4F134BB5B6273CCD4DA6EA81 /* Pods-NotificationContent.debugq.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationContent.debugq.xcconfig"; path = "Target Support Files/Pods-NotificationContent/Pods-NotificationContent.debugq.xcconfig"; sourceTree = "<group>"; };
 		5124FC4761EFEA2E3A6E9086 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
-		525EF26D0A5E576FA1C57118 /* STComponentTools_ExampleQ.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; name = STComponentTools_ExampleQ.app; path = "YKRPC-POD-NAME_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		525EF26D0A5E576FA1C57118 /* YKRPC-POD-NAME_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YKRPC-POD-NAME_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5644CDE18EF6FC98885E087F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		5CB0F906E6AA99DB7C3E1A58 /* Pods-NotificationService.releaseq.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.releaseq.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.releaseq.xcconfig"; sourceTree = "<group>"; };
 		5EA0F90F924703F4B442526B /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		A03947B97BC1D1F10B62EE2C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		A3255C38F2421FB7EBAC823A /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		A6E60840D30F733E311E1F94 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
-		AB81B327B61253450B822C72 /* NotificationService.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB81B327B61253450B822C72 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26A5DADB4D2844B99E030B2 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		B43CAB26D1A136E3B2B88A69 /* NotificationContent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotificationContent-Bridging-Header.h"; sourceTree = "<group>"; };
 		B7BAB6BFDC3D8C3EC41515AD /* STComponentTools_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STComponentTools_Example-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -490,11 +490,11 @@
 			isa = PBXGroup;
 			children = (
 				0A9202EDCC13940397ED54F6 /* NotificationContent.appex */,
-				1EE5D40FE49A0659E103EADD /* NotificationContentQ.appex */,
+				1EE5D40FE49A0659E103EADD /* NotificationContent.appex */,
 				AB81B327B61253450B822C72 /* NotificationService.appex */,
-				493864C22F386D13C787A8C8 /* NotificationServiceQ.appex */,
+				493864C22F386D13C787A8C8 /* NotificationService.appex */,
 				4428043D213F525DB1A88CC2 /* YKRPC-POD-NAME_Example.app */,
-				525EF26D0A5E576FA1C57118 /* STComponentTools_ExampleQ.app */,
+				525EF26D0A5E576FA1C57118 /* YKRPC-POD-NAME_Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -611,7 +611,7 @@
 			);
 			name = STComponentTools_ExampleQ;
 			productName = STComponentTools_ExampleQ;
-			productReference = 525EF26D0A5E576FA1C57118 /* STComponentTools_ExampleQ.app */;
+			productReference = 525EF26D0A5E576FA1C57118 /* YKRPC-POD-NAME_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2A6FD03C987E90E50C52D84D /* NotificationServiceQ */ = {
@@ -628,7 +628,7 @@
 			);
 			name = NotificationServiceQ;
 			productName = NotificationServiceQ;
-			productReference = 493864C22F386D13C787A8C8 /* NotificationServiceQ.appex */;
+			productReference = 493864C22F386D13C787A8C8 /* NotificationService.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		5BD6DE13341336FA7934149F /* NotificationContent */ = {
@@ -683,7 +683,7 @@
 			);
 			name = NotificationContentQ;
 			productName = NotificationContentQ;
-			productReference = 1EE5D40FE49A0659E103EADD /* NotificationContentQ.appex */;
+			productReference = 1EE5D40FE49A0659E103EADD /* NotificationContent.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -695,19 +695,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					025BA46D77081E2FE62B053C = {
-						DevelopmentTeam = A6BT3R49BJ;
-					};
 					102A9CC4AB81D3F45FE1C789 = {
 						DevelopmentTeam = A6BT3R49BJ;
 					};
 					2A6FD03C987E90E50C52D84D = {
-						DevelopmentTeam = A6BT3R49BJ;
-					};
-					5BD6DE13341336FA7934149F = {
-						DevelopmentTeam = A6BT3R49BJ;
-					};
-					6ABE28C2F21F003589A36625 = {
 						DevelopmentTeam = A6BT3R49BJ;
 					};
 					7D4ADE6CA11D85A0EDD35A3C = {
@@ -1183,6 +1174,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33FE2EA0CB40D204986589E1 /* debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GCTMPJ4V33;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1225,6 +1217,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4C1B4B4A227D266B6B0CA36 /* debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GCTMPJ4V33;
 				INFOPLIST_FILE = NotificationContent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1267,6 +1260,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EA0F90F924703F4B442526B /* debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GCTMPJ4V33;
 				INFOPLIST_FILE = TargetMain/Info.plist;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1276,6 +1270,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AF3F7EC84051900CFF3A4AA /* debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GCTMPJ4V33;
 				INFOPLIST_FILE = TargetMain/Info.plist;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1285,6 +1280,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5124FC4761EFEA2E3A6E9086 /* debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GCTMPJ4V33;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1372,6 +1368,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31EABF86FFA64BE090C63968 /* debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GCTMPJ4V33;
 				INFOPLIST_FILE = NotificationContent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

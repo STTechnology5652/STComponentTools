@@ -52,12 +52,4 @@
     return [[STRouterExecute new] stCanOpenUrl:url parameter:parameters absolute:absolute error:err];
 }
 
-- (NSDictionary *)stRouterMapperDict {
-    return [[STRouterExecute new] stRouterMapperDict];
-}
-
-- (NSString *)stRouterMapperJsonString {
-    return [[STRouterExecute new] stRouterMapperJsonString];
-}
-
 @end

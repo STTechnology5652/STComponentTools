@@ -25,9 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)stDeregisteNode;
 - (void)stCleanNodes;
 
-# pragma mark - debug methods
-- (NSString *)stRouterMapperJsonString;
-- (NSDictionary *)stRouterMapperDict;
 @end
 
 NS_ASSUME_NONNULL_END

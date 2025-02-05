@@ -57,7 +57,7 @@ Pod::Spec.new do |spec|
 #         'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) YKHawkeyeWithLoad'
 #       }
       ss.dependency 'STAnnotation'
-      ss.dependency 'YYModel'
+#      ss.dependency 'YYModel'
 
 #       ss.vendored_frameworks = 'YKHawkeye/Framework/*.framework'
     end

@@ -11,7 +11,6 @@
 #import "STRouterHelper.h"
 
 #import <pthread/pthread.h>
-#import <YYModel/YYModel.h>
 
 @interface STRouterMapperNode()
 {
@@ -114,9 +113,6 @@
     pthread_rwlock_unlock(&(self->_lock_STRWLock)); /// 读解锁
     return result;
 }
-
-- (NSString *)stRouterMapperJsonString {return [self yy_modelToJSONString];}
-- (NSDictionary *)stRouterMapperDict {return  [self yy_modelToJSONObject];}
 
 # pragma mark - work methods
 - (STRouterMapperNode *)stSearchNodeWithUrl:(NSString *)url absoluteFlag:(BOOL)absolute error:(NSError **)err {

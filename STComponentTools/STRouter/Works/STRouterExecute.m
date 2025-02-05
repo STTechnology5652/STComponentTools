@@ -16,7 +16,6 @@
 #import <pthread/pthread.h>
 
 #import <STAnnotation/STAnnotationHeader.h>
-#import <YYModel/YYModel.h>
 
 @interface STRouterExecute ()
 @property(nonatomic, strong) STRouterMapperNode *routerNodesMap; ///< 路由表--事件
@@ -158,14 +157,6 @@ static STRouterExecute *imp;
         return NO;
     }
     return YES;
-}
-
-- (NSString *)stRouterMapperJsonString {
-    return [self.routerNodesMap stRouterMapperJsonString];
-}
-
-- (NSDictionary *)stRouterMapperDict {
-    return [self.routerNodesMap stRouterMapperDict];
 }
 
 # pragma mark - work methods

@@ -9,8 +9,6 @@
 
 #import "STRouterDefines.h"
 
-#import <YYModel/YYModel.h>
-
 @interface STRouterUrlParser ()
 @property (nonatomic,copy) NSString *url;  ///< url
 @property (nonatomic,copy) NSString *scheme;  ///< scheme
@@ -28,9 +26,6 @@
 @end
 
 @implementation STRouterUrlParser
-- (id)copyWithZone:(NSZone *)zone {
-    return [self yy_modelCopy];
-}
 
 + (instancetype)stParserUrl:(NSString *)url parameter:(NSDictionary *)parameter {
     if(!url.length) return nil;

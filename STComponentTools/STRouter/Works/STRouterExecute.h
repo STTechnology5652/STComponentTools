@@ -74,10 +74,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param err 错误信息
  */
 - (BOOL)stCanOpenUrl:(NSString *)url parameter:(NSDictionary * __nullable)parameters absolute:(BOOL)absolute error:(NSError *__nullable *__nullable)err;
-
-# pragma mark - debug methods
-- (NSString *)stRouterMapperJsonString;
-- (NSDictionary *)stRouterMapperDict;
 @end
 
 NS_ASSUME_NONNULL_END

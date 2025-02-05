@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class UIViewController;
-@interface STRouterUrlRequest : NSObject<NSCopying>
+@interface STRouterUrlRequest : NSObject
 @property(nonatomic, copy) NSString * urlToOpen; ///< 调用路由时候，使用 urlToOpen
 @property (nonatomic,assign) BOOL absolute; ///< 绝对匹配URL
 @property(nonatomic, copy) NSString * urlParttern; ///< 注册路由时候，使用urlParttern
@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)instanceWithBuilder:(void(^)(STRouterUrlRequest *builder))builderAction;
 @end
 
-@interface STRouterUrlResponse : NSObject<NSCopying>
+@interface STRouterUrlResponse : NSObject
 @property (nonatomic,assign) NSInteger status; ///< 业务码
 @property (nonatomic, strong) NSDictionary * __nullable responseObj; ///< 应答数据
 @property(nonatomic, copy) NSString * msg; ///< 业务应当信息
