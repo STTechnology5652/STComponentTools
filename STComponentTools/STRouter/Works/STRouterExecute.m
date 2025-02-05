@@ -106,7 +106,7 @@ static STRouterExecute *imp;
     NSError *err = nil;
     STRouterUrlRequest *requestUsing = nil;
     
-    STRouterMapperNode *node = [self yk_filterUrNodeWithRequest:[request copy] requestBack:&requestUsing error:&err];
+    STRouterMapperNode *node = [self yk_filterUrNodeWithRequest:request requestBack:&requestUsing error:&err];
     
     if (err) { //失败
         STRouterUrlResponse *response = [STRouterUrlResponse instanceWithBuilder:^(STRouterUrlResponse * _Nonnull response) {
@@ -210,7 +210,7 @@ static STRouterExecute *imp;
     }
     
     if (requestBack) {
-        STRouterUrlRequest *request_used = [request copy];
+        STRouterUrlRequest *request_used = request;
         *requestBack = request_used;
     }
     

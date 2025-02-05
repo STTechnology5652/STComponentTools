@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "STComponentTools"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "STComponentTools 说明."
   spec.description      = <<-DESC
   STComponentTools long description of the pod here.

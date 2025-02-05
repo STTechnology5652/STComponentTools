@@ -1,11 +1,11 @@
 PODS:
   - STAnnotation (0.0.1)
-  - STComponentTools (0.0.4):
-    - STComponentTools/STModuleService (= 0.0.4)
-    - STComponentTools/STRouter (= 0.0.4)
-  - STComponentTools/STModuleService (0.0.4):
+  - STComponentTools (0.0.5):
+    - STComponentTools/STModuleService (= 0.0.5)
+    - STComponentTools/STRouter (= 0.0.5)
+  - STComponentTools/STModuleService (0.0.5):
     - STAnnotation
-  - STComponentTools/STRouter (0.0.4):
+  - STComponentTools/STRouter (0.0.5):
     - STAnnotation
 
 DEPENDENCIES:
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   STAnnotation: ea0dcdbf740b57237d29384c521e4887d00031df
-  STComponentTools: 8b336df5900834dea05856bd4bc0ed4355a554ad
+  STComponentTools: ca1aa401d7b8a47a99cd0ce8c85ad81499fa1409
 
 PODFILE CHECKSUM: 871ee2dbfb1d79ec79931783a3c7c1967eaa4615
 
